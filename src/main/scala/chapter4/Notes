@@ -1,0 +1,9 @@
++-------------+-----------+---------------------+
+| Scala       |  Cats     |  Properties         |
++-------------+-----------+---------------------+
+| val         | Now       | Eager, Memoized     |
+| def         | Always    | Lazy, not memoized  |
+| lazy val    | Later     | Lazy, memoized      |
++-------------+-----------+---------------------+
+
+
