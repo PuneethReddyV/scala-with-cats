@@ -5,7 +5,7 @@ trait Printable[A] {
   def format(value: A): String
 
   def contraMap[B](f: B => A):  Printable[B] = new Printable[B] {
-    override def format(value: B): String = format(value)  ///?????
+    override def format(value: B): String = Printable.this.format(f(value))  ///****
   }
 }
 
